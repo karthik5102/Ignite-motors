@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 style="font-size:30px;text-align:center; ">"Ignite Your Drive: Find Your Dream Car Today"
+        <br>
+    
+        <img style="width: 15em;" src="ignite logo.jpg">
+    <div style="text-align:center;margin-top:40px;">
+    <a style="padding-right: 20px;background-color:aqua ;"href="Home.html">Home</a>
+    <a style="padding-right: 20px;background-color:aqua ;"href="About.html">About us</a>
+    <a style="padding-right: 20px;background-color:aqua ;"href="Contact us.html">contact us</a>
+    <a style="padding-right: 20px;background-color:green;"href="login.html">login</a>
+    <a style="padding-right: 20px;background-color:red ;"href="logout.html">logout</a>
+    
+    
+    </div>
+    <hr>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Page</title>
+    <style>
+        body {
+            background: url('row-cars-parked-row.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            transition: background 0.5s ease-in-out;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #28a745;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        .register-link {
+            margin-top: 15px;
+            display: block;
+            cursor: pointer;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .register-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showRegister() {
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('register-container').style.display = 'block';
+            document.body.style.background = "url('HD-wallpaper-used-cars-overland-park-ks-used-cars-trucks-ks-overland-park-imports-car-dealer.jpg') no-repeat center center fixed";
+            document.body.style.backgroundSize = "cover";
+        }
+    </script>
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h2>Welcome Back!</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a onclick="showRegister()" class="register-link">New member? Register</a>
+    </div>
+    
+    <div id="register-container" class="container" style="display: none;">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="input-group">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="reg-email">Email</label>
+                <input type="email" id="reg-email" name="reg-email" required>
+            </div>
+            <div class="input-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="reg-password" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
